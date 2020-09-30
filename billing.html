@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing</title>
+    <link rel="stylesheet" type="text/css" href="./css/hover-min.css">
+    <link rel="stylesheet" type="text/css" href="./css/magnific-popup.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1b9375a91d.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <!-- NAVBAR  -->
+    <nav class="navbar navbar-expand-lg vw-100" id="sticky-header">
+        <div class="container nav-container">
+            <a class="navbar-brand" href="index.html">
+                <img src="media/logo.png" alt="" srcset="" class="resp-logo pl=3">
+            </a>
+            <button class="navbar-toggler second-button" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <div class="animated-icon2"><span></span><span></span><span></span><span></span></div>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html">Features <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="pricing.html">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Solution</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Integrations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Support</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="account.html">Account</a>
+                    </li>
+                    <!-- <div class="flex-nav-container">
+                        <li class="nav-item flex-item">
+                            <a class="nav-link flex-link" href="login.html">Log in</a>
+                        </li>
+                        <li class="nav-item flex-item">
+                            <a class="nav-link flex-link signup-link" href="signup.html">Sign Up</a>
+                        </li>
+                    </div> -->
+
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- NAVBAR  -->
+
+    <div class="main-billing py-5">
+
+        <div class="container acc-head-cont">
+            <h2 class="acc-head pb-4">Billing</h2>
+            <hr style="color: #707070; border-width: 2px;">
+        </div>
+
+        <div class="bill-cont container">
+            <div class="bill-inner">
+                <div class="bill-inner-txt my-5">
+                    <p>You are currently enjoying the Pro trial.</p>
+                    <p>On September 30 2020, you'll be downgraded to the free plan.</p>
+                </div>
+                <div class="bill-btn-div" id="inline-popups">
+                    <a href="#price-popup" data-effect="mfp-zoom-in" class="bill-btn">Upgrade</a>
+                </div>
+
+            </div>
+
+
+            <div id="price-popup" class="white-popup mfp-with-anim mfp-hide">
+                <div class="plan-nav container mt-5">
+
+                    <h3 style="text-align: center; font-weight: 700;">Upgrade Your Account</h3>
+                    <ul class="nav nav-tabs plan-nav-tabs" id="myTab" role="tablist">
+                        <!-- <li class="nav-item" role="presentation">
+                            <a class="nav-link plan-nav-link active" id="basic-tab" data-toggle="tab" href="#basic" role="tab"
+                                aria-controls="basic" aria-selected="true">Basic</a>
+                        </li> -->
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link plan-nav-link active" id="plus-tab" data-toggle="tab" href="#plus" role="tab"
+                                aria-controls="plus" aria-selected="false">Plus</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link plan-nav-link" id="enterprise-tab" data-toggle="tab" href="#enterprise"
+                                role="tab" aria-controls="enterprise" aria-selected="false">Enterprise</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content mt-5" id="myTabContent">
+                        <!-- <div class="tab-pane fade show active" id="basic" role="tabpanel" aria-labelledby="basic-tab">
+                            <div class="plan-cards">
+                                <div class="row plan-card-row">
+                                    <div class="col-12 plan-card-col">
+                                        <div class="plan-card-content">
+                                            <div class="plan-head">
+                                                <h4>Basic</h4>
+                                                <p>Appointment and Customer Management</p>
+                                            </div>
+                                            <div class="plan-mid">
+                                                <h5>Monthly/Yearly</h5>
+                                                <label class="switch">
+                                                    <input type="checkbox" id="myCheckbox" onchange="toggleCheck()" checked>
+                                                    <span class="sl round"></span>
+                                                </label>
+                                                <br />
+                                                <h2 id="month-rate">$39 / month</h2>
+                                                <h2 id="year-rate">$30 / year</h2>
+                                            </div>
+                                            <div class="plan-mid-btn-div my-4">
+                                                <a href="#" class="plan-mid-btn">Book a Free Trial</a>
+                                            </div>
+                                            <div class="plan-lower">
+                                                <br>Online booking on your website<br>
+                                                Online booking via Facebook<br>
+                                                Online booking via Google*<br>
+                                                New Bookings via Instagram<br>
+                                                Online calendar<br>
+                                                Customer database<br>
+                                                Email reminders<br>
+                                                Customer feedback<br>
+                                                Mobile app for iOS and Android<br>
+                                                Google Calendar sync<br>
+                                                Business Insights
+                                            </div>
+        
+                                        </div>
+                                    </div>
+        
+                                </div>
+                            </div>
+                        </div> -->
+                        <div class="tab-pane fade show active" id="plus" role="tabpanel" aria-labelledby="plus-tab">
+                            <div class="plan-cards">
+                                <div class="row plan-card-row">
+        
+                                    <div class="col-12 plan-card-col">
+                                        <div class="plan-card-content">
+                                            <div class="plan-head">
+                                                <h4>Plus</h4>
+                                                <p>Appointment and Customer Management</p>
+                                            </div>
+                                            <div class="plan-mid">
+                                                <h5>Monthly/Yearly</h5>
+                                                <label class="switch">
+                                                    <input type="checkbox" id="myCheckbox1" onchange="toggleCheck1()" checked>
+                                                    <span class="sl round"></span>
+                                                </label>
+                                                <br />
+                                                <h2 id="month-rate1">$60 / month</h2>
+                                                <h2 id="year-rate1">$55 / year</h2>
+                                            </div>
+                                            <div class="plan-mid-btn-div my-4">
+                                                <a href="#" class="plan-mid-btn">Book a Free Trial</a>
+                                            </div>
+                                            <div class="plan-lower">
+                                                <span class="plan-lower-mid"><br>Basic Plan + <br><br></span>
+                                                Email newsletters<br>
+                                                Automated emails<br>
+                                                SMS message reminders<br>
+                                                2500 text newsletters<br>
+                                                Birthday reminder<br>
+                                                Shift planner
+                                            </div>
+        
+                                        </div>
+                                    </div>
+        
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="enterprise" role="tabpanel" aria-labelledby="enterprise-tab">
+                            <div class="plan-cards">
+                                <div class="row plan-card-row">
+        
+                                    <div class="col-12 plan-card-col">
+                                        <div class="plan-card-content">
+                                            <div class="plan-head">
+                                                <h4>Enterprise</h4>
+                                                <p>Appointment and Customer Management</p>
+                                            </div>
+                                            <div class="plan-mid">
+                                                <h5>Monthly/Yearly</h5>
+                                                <label class="switch">
+                                                    <input type="checkbox" id="myCheckbox2" onchange="toggleCheck2()" checked>
+                                                    <span class="sl round"></span>
+                                                </label>
+                                                <br />
+                                                <h2 id="month-rate2">$39 / month</h2>
+                                                <h2 id="year-rate2">$30 / year</h2>
+                                            </div>
+                                            <div class="plan-mid-btn-div my-4">
+                                                <a href="#" class="plan-mid-btn">Book a Free Trial</a>
+                                            </div>
+        
+                                            <div class="plan-lower">
+                                                <span class="plan-lower-mid"><br>Plus Plan + <br><br></span>
+                                                Email newsletters<br>
+                                                Automated emails<br>
+                                                SMS message reminders<br>
+                                                2500 text newsletters<br>
+                                                Birthday reminder<br>
+                                                Shift planner
+                                            </div>
+        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+    <footer>
+        <div class="container py-5">
+            <div class="footer-data">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 w-50">
+                        <div class="w-75 py-3">
+                            <h4 class="my-2">About</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse qui quasi eum dolorum iure
+                                laboriosam at enim illo impedit quo ipsum delectus, optio in minus fugiat ab mollitia
+                                nobis tempore?</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 w-50">
+                        <div class="w-75 py-3">
+                            <h4 class="my-2">Pages</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse qui quasi eum dolorum iure
+                                laboriosam at enim illo impedit quo ipsum delectus, optio in minus fugiat ab mollitia
+                                nobis tempore?</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 w-50">
+                        <div class="w-75 py-3">
+                            <h4 class="my-2">Location</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse qui quasi eum dolorum iure
+                                laboriosam at enim illo impedit quo ipsum delectus, optio in minus fugiat ab mollitia
+                                nobis tempore?</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 w-50">
+                        <div class="w-75 py-3">
+                            <h4 class="my-2">Contact Info</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse qui quasi eum dolorum iure
+                                laboriosam at enim illo impedit quo ipsum delectus, optio in minus fugiat ab mollitia
+                                nobis tempore?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr style="background-color: #32b8209f;">
+
+            <!-- Copyright -->
+
+            <div class="footer-copyright text-center py-2">
+                <div class="social-div">
+                    <span class="social">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-twitter"></i>
+                    </span>
+                </div>
+
+                <p>© 2020 Copyright:
+                    <a href="index.html" style="color: white;"> Calends</a>
+                </p>
+
+                <hr style="background-color: #32b8209f;">
+
+                <p class="desingner mt-3">Designed By UNICORN DIGITAL SOLUTION</p>
+
+            </div>
+
+            <!-- Copyright -->
+        </div>
+    </footer>
+
+
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>

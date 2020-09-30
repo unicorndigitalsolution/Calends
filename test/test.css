@@ -1,0 +1,267 @@
+body{
+    overflow-x: hidden;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+.sec1-container{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.banner{
+    height: 100%;
+    width: 100%;
+    background: rgb(255,255,255);
+    background: linear-gradient(97deg, rgba(255,255,255,1) 0%, rgba(236,238,241,1) 100%);
+    position: relative;
+}
+
+
+
+.sec1-content{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 40px 40px 40px;
+    overflow: hidden;
+}
+
+
+.banner-img{
+    width: 100vw;
+    max-width: 560px;
+    height: 100%;
+}
+
+.banner-text{
+    color: #393A3D;
+}
+
+.banner-heading{
+    font-size: 1.6em;
+    text-align: center;
+    font-weight: 800;
+}
+
+.banner-text p{
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.banner-form{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.banner-form input{
+    border: none;
+    border-radius: 8px;
+    /* width: 60%; */
+    height: 2em;
+}
+
+.banner-form input:focus{
+    outline: none;
+}
+
+
+
+@media screen and (min-width:400px) {
+    .sec1-content{
+        padding: 0 20px 20px 20px;
+    }
+
+    .banner-heading{
+        font-size: 2em;
+    }
+
+    .banner-text p{
+        font-size: 1.3em;
+    }
+    
+    .banner-form input{
+        width: 20em;
+        height: 3.8em;
+    }
+}
+
+@media screen and (min-width:573px){
+    .banner{
+        height: auto;
+        max-width: 100%;
+    }
+
+    img.banner-img{ 
+        max-width: 100%;
+        height: auto;
+    }
+
+    .banner-heading{
+        font-size: 1.5em;
+        text-align: left;
+    }
+
+    .banner-text p{
+        font-size: 0.8em;
+        text-align: left;
+    }
+
+    .banner-form{
+        text-align: left;
+    }
+    
+    .banner-form input{
+        width: 15em;
+        height: 3.8em;
+        text-align: left;
+    }
+}
+
+
+
+@media screen and (min-width:768px) {
+    .banner-heading{
+        font-size: 2em;
+    }
+
+    .banner-text p{
+        font-size: 1em;
+    }
+    
+    .banner-form input{
+        width: 20em;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .banner-heading{
+        font-size: 3em;
+    }
+
+    .banner-text p{
+        font-size: 1.5em;
+    }
+    
+    .banner-form input{
+        width: 28em;
+        height: 3.5em;
+    }
+
+}
+
+@media screen and (min-width:1200px) {
+    .banner-heading{
+        font-size: 3.5em;
+    }
+
+    .banner-text p{
+        font-size: 1.5em;
+    }
+    
+    .banner-form input{
+        width: 32em;
+        height: 3.5em;
+    }
+}
+
+@media screen and (min-width:1400px) {
+    .banner-heading{
+        font-size: 4em;
+    }
+
+    .banner-text p{
+        font-size: 1.8em;
+    }
+    
+    .banner-form input{
+        width: 40em;
+        height: 4em;
+    }
+}
+
+
+
+
+/* BUTTON  */
+
+.banner-form{
+    position: relative;
+}
+
+.input-area{
+    display: inline;
+    position: relative;
+}
+
+.input-area input{
+    box-shadow:  -21px 21px 60px #ababab, 
+    21px -21px 60px #ffffff !important ;
+    padding: 3px ;
+}
+
+.banner-btn {
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    box-shadow:  5px 5px 15px #2588189f, 
+             -5px -5px 15px #32b8209f !important;
+    border-radius: 30px;
+    background-color: #2CA01C;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 0.7em;
+    font-weight: 500;
+    padding: 3px;
+    transition: all 0.5s;
+    cursor: pointer;
+    min-width: 3.5em;
+}
+
+@media screen and (min-width: 400px){
+    .banner-btn {
+        padding: 10px;
+        width: 4.5em;
+        font-size: 1em;
+        right: 15px;
+        bottom: -12px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .banner-btn {
+        padding: 10px;
+        width: 4.5em;
+        font-size: 1em;
+        right: 20px;
+        bottom: -12px;
+    }
+}
+
+@media screen and (min-width:1120px) {
+    .banner-btn {
+        padding: 10px;
+        width: 4.5em;
+        font-size: 1em;
+        bottom: -12px;
+    }
+}
+
+
+
+.banner-btn:focus {
+    color: #393A3D;
+    outline: none;
+}
+
+.banner-btn:hover {
+    color: #f3f3f3;
+    background-color: #1d1d1d;
+}

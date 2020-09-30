@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" type="text/css" href="css/hover-min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1b9375a91d.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <!-- NAVBAR  -->
+    <nav class="navbar navbar-expand-lg vw-100" id="sticky-header">
+        <div class="container nav-container">
+            <a class="navbar-brand" href="index.html">
+                <img src="media/logo.png" alt="" srcset="" class="resp-logo pl=3">
+            </a>
+            <button class="navbar-toggler second-button" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <div class="animated-icon2"><span></span><span></span><span></span><span></span></div>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html">Features <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="pricing.html">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Solution</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Integrations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Support</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="account.html">Account</a>
+                    </li>
+                    <!-- <div class="flex-nav-container">
+                        <li class="nav-item flex-item">
+                            <a class="nav-link flex-link" href="login.html">Log in</a>
+                        </li>
+                        <li class="nav-item flex-item">
+                            <a class="nav-link flex-link signup-link" href="signup.html">Sign Up</a>
+                        </li>
+                    </div> -->
+
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- NAVBAR  -->
+
+    <div class="main-account py-5">
+
+        <div class="container acc-head-cont">
+            <h2 class="acc-head pb-4">Account Settings</h2>
+            <hr style="color: #707070; border-width: 2px;">
+        </div>
+
+        <div class="container set-cont">
+            <ul class="nav nav-tabs nav-fill set-nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item set-nav-item" role="presentation">
+                    <a class="nav-link set-nav-link active" id="profile-tab" data-toggle="tab" href="#profile"
+                        role="tab" aria-controls="profile" aria-selected="true">Profile</a>
+                </li>
+                <li class="nav-item set-nav-item" role="presentation">
+                    <a class="nav-link set-nav-link" id="branding-tab" data-toggle="tab" href="#branding" role="tab"
+                        aria-controls="branding" aria-selected="false">Branding</a>
+                </li>
+                <li class="nav-item set-nav-item" role="presentation">
+                    <a class="nav-link set-nav-link" id="link-tab" data-toggle="tab" href="#link" role="tab"
+                        aria-controls="link" aria-selected="false">My Link</a>
+                </li>
+                <li class="nav-item set-nav-item" role="presentation">
+                    <a class="nav-link set-nav-link" id="account-tab" data-toggle="tab" href="#account" role="tab"
+                        aria-controls="account" aria-selected="false">Account</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="profile-inner">
+                        <div class="row prof-row py-5">
+                            <div class="col-4 prof-col">
+                                <div class="prof-icon">
+                                    <img src="media/img_avatar.png" alt="Avatar" class="avatar">
+                                </div>
+                            </div>
+                            <div class="col-8 prof-col">
+                                <div class="prof-upload">
+                                    <span style="display: block;">JPG, GIF or PNG. Max size of 5MB.</span>
+                                    <button class="prof-upld-btn mt-2">Upload a Picture</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="prof-form container">
+                            <form action="">
+                                <!-- <div class="form-group mb-5">
+                                    <label for="name">Name</label>
+                                    <input type="text" class="form-control prof-input-norm" id="name">
+                                </div> -->
+
+                                <div class="signup-fields">
+                                    <div class="lbl lbl-r">
+                                        <label for="fname" class="lbl-heads">First Name</label>
+
+                                        <div class="col-sm-6 validate-input p-0 wd-class">
+                                            <input class="acc-field-input input100" type="text" name="fname">
+                                            <span class="focus-input100"></span>
+                                        </div>
+                                    </div>
+                                    <div class="lbl lbl-l">
+                                        <label for="lname" class="lbl-heads">Last Name</label>
+
+                                        <div class="col-sm-6 p-0 wd-class">
+                                            <input class="acc-field-input input100 " type="text" name="lname">
+                                            <span class="focus-input100"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group my-5">
+                                    <label for="message" class="lbl-heads">Message</label>
+                                    <div class="fake-input">
+                                        <textarea class="form-control prof-input-msg input100" rows="5" id="message"
+                                            placeholder="Welcome to my scheduling page. Please follow the instructions to add an event to my calendar."></textarea>
+                                        <span class="focus-input100"></span>
+                                    </div>
+
+                                </div>
+
+                                <div class="form-group my-5">
+                                    <label for="lang" class="lbl-heads">Language</label>
+                                    <div class="fake-input">
+                                        <select class="form-control prof-input-msg input100" id="lang">
+                                            <option>English</option>
+                                            <option>French</option>
+                                            <option>Spanish</option>
+                                            <option>Portuguese</option>
+                                        </select>
+                                        <span class="focus-input100"></span>
+                                    </div>
+                                </div>
+
+                                <div class="prof-date-time my-5">
+                                    <div class="form-group date-time">
+                                        <div class="lbl lbl-r">
+                                            <label for="date" class="lbl-heads">Date Format</label>
+                                            <div class="fake-input">
+                                                <select class="form-control prof-input-dt input100" id="date">
+                                                    <option>DD/MM/YYYY</option>
+                                                    <option>MM/DD/YYYY</option>
+                                                </select>
+                                                <span class="focus-input100"></span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="form-group date-time">
+                                        <div class="lbl lbl-l">
+                                            <label for="time" class="lbl-heads">Time Format</label>
+                                            <div class="fake-input">
+                                                <select class="form-control prof-input-dt input100" id="time">
+                                                    <option>12h (am/pm)</option>
+                                                    <option>24h</option>
+                                                </select>
+                                                <span class="focus-input100"></span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="form-group my-5">
+                                    <label for="country" class="lbl-heads">Country</label>
+                                    <div class="fake-input">
+                                        <select class="form-control prof-input-msg input100" id="country">
+                                            <option>USA</option>
+                                            <option>India</option>
+                                            <option>Canada</option>
+                                            <option>UK</option>
+                                        </select>
+                                        <span class="focus-input100"></span>
+                                    </div>
+                                </div>
+
+                                <div class="form-group my-5">
+                                    <label for="zone" class="lbl-heads">Time-Zone</label>
+                                    <div class="fake-input">
+                                        <select class="form-control prof-input-msg input100" id="zone">
+                                            <option>India Standard Time</option>
+                                            <option>Pacific/Majuro</option>
+                                            <option>Cape Verde Time</option>
+                                            <option>Central European Time</option>
+                                        </select>
+                                        <span class="focus-input100"></span>
+                                    </div>
+                                </div>
+
+                                <div class="prof-submit my-4">
+                                    <button class="prof-sb-btn">Submit</button>
+                                </div>
+                                <div class="prof-submit my-3">
+                                    <button class="prof-cncl-btn">Cancel</button>
+                                </div>
+                            </form>
+
+                            <div class="prof-del my-5">
+                                <button class="prof-del-btn">Delete Account</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="tab-pane fade" id="branding" role="tabpanel" aria-labelledby="branding-tab">
+                    <div class="profile-inner">
+                        <div class="acc-form container">
+                            <div class="set-logo my-5">
+                                <div class="set-logo-head">
+                                    <p class="lbl-heads">Logo</p>
+                                </div>
+                                <div class="set-logo-box">
+                                    <p>No Logo</p>
+                                </div>
+                                <div class="upld-logo">
+                                    <div class="upld-logo-btn">
+                                        <button class="prof-upld-btn mt-2">Upload Image</button>
+                                    </div>
+                                    <div class="upld-dsc">
+                                        <p class="m-0 dscr">JPG, GIF or PNG. Max size of 5MB.</p>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+                            <hr>
+
+                            <div class="brnd-switch my-5">
+                                <div class="brnd-switch-text">
+                                    <p class="lbl-heads">Calends Branding</p>
+                                </div>
+                                <div class="brnd-switch-inner">
+                                    <label class="switch1">
+                                        <input type="checkbox">
+                                        <span class="swtch-slider s-round"></span>
+                                    </label>
+                                </div>
+
+                            </div>
+
+                            <div class="prof-submit my-4">
+                                <button class="prof-sb-btn">Submit</button>
+                            </div>
+                            <div class="prof-submit my-3">
+                                <button class="prof-cncl-btn">Cancel</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="link" role="tabpanel" aria-labelledby="link-tab">
+                    <div class="profile-inner">
+                        <div class="link-form container">
+                            <div class="link-tab-head my-5">
+                                <p>Changing your Calendly URL will mean that all of your copied links will no longer
+                                    work and will need to be updated.</p>
+                            </div>
+
+                            <div class="link-form-inner my-5">
+                                <div class="link-form-text mx-2">
+                                    <p style="padding-top: 15px;">calends.com/ </p>
+                                </div>
+                                <div class="link-form-input">
+                                    <div class="p-0 wd-class">
+                                        <input class="acc-field-input input100" type="text" name="name">
+                                        <span class="focus-input100"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="prof-submit my-4">
+                                <button class="prof-sb-btn">Save Changes</button>
+                            </div>
+                            <div class="prof-submit my-3">
+                                <button class="prof-cncl-btn">Cancel</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="account" role="tabpanel" aria-labelledby="account-tab">
+                    <div class="profile-inner">
+                        <div class="log-form container">
+                            <div class="log-tab-head my-5">
+                                <p>You log in with an email address and password.</p>
+                            </div>
+
+                            <div class="log-form-inner my-5">
+                                <p class="lbl-heads mb-0">Email Address</p>
+                                <div class="log-form-flex mb-5">
+                                    <div class="log-form-text">
+                                        <p class="mb-0">admin.calends@gmail.com </p>
+                                    </div>
+                                    <div class="log-form-link">
+                                        <a href="#">Change Email</a>
+                                    </div>
+                                </div>
+
+                                <p class="lbl-heads mb-0">Password</p>
+                                <div class="log-form-flex">
+                                    <div class="log-form-text">
+                                        <p class="mb-0">*********** </p>
+                                    </div>
+                                    <div class="log-form-link">
+                                        <a href="#">Change Password</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="sprt container">
+                            <p>Please <a href="#">contact support</a> if you need assistance.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+
+    <footer>
+        <div class="container py-5">
+            <div class="footer-data">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 w-50">
+                        <div class="w-75 py-3">
+                            <h4 class="my-2">About</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse qui quasi eum dolorum iure
+                                laboriosam at enim illo impedit quo ipsum delectus, optio in minus fugiat ab mollitia
+                                nobis tempore?</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 w-50">
+                        <div class="w-75 py-3">
+                            <h4 class="my-2">Pages</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse qui quasi eum dolorum iure
+                                laboriosam at enim illo impedit quo ipsum delectus, optio in minus fugiat ab mollitia
+                                nobis tempore?</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 w-50">
+                        <div class="w-75 py-3">
+                            <h4 class="my-2">Location</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse qui quasi eum dolorum iure
+                                laboriosam at enim illo impedit quo ipsum delectus, optio in minus fugiat ab mollitia
+                                nobis tempore?</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 w-50">
+                        <div class="w-75 py-3">
+                            <h4 class="my-2">Contact Info</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse qui quasi eum dolorum iure
+                                laboriosam at enim illo impedit quo ipsum delectus, optio in minus fugiat ab mollitia
+                                nobis tempore?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr style="background-color: #32b8209f;">
+
+            <!-- Copyright -->
+
+            <div class="footer-copyright text-center py-2">
+                <div class="social-div">
+                    <span class="social">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-twitter"></i>
+                    </span>
+                </div>
+
+                <p>© 2020 Copyright:
+                    <a href="index.html" style="color: white;"> Calends</a>
+                </p>
+
+                <hr style="background-color: #32b8209f;">
+
+                <p class="desingner mt-3">Designed By UNICORN DIGITAL SOLUTION</p>
+
+            </div>
+
+            <!-- Copyright -->
+        </div>
+    </footer>
+
+
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
