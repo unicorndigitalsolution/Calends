@@ -1152,6 +1152,12 @@ footer {
     display: none;
 }
 
+@media screen and (min-width: 580px){
+    #login-passbox {
+        width: 500px;
+    }
+}
+
 #p-email {
     font-size: 0.8em;
 }
